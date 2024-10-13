@@ -1,3 +1,6 @@
+# pylint: disable=line-too-long, trailing-whitespace
+
+
 """Tests for the cleaning module"""
 import pandas as pd
 
