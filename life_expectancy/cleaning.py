@@ -28,7 +28,7 @@ def clean_data(country_code="PT"):
     df['value'] = pd.to_numeric(df['value'], errors='coerce')
 
     # Drop rows where `value` became `NaN` after removing non-numeric characters
-    df.dropna(subset=['value'], inplace=True)   
+    df.dropna(subset=['value'], inplace=True)
     print("After cleaning value column:", df.shape)
 
     # Filter for the specified region
