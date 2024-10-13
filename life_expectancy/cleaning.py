@@ -23,10 +23,10 @@ def clean_data(country_code="PT"):
 
     # Remove non-numeric characters in `value`, keeping only numbers and decimals
     df['value'] = df['value'].apply(lambda x: re.sub(r'[^0-9.]', '', str(x)))
-
+    
     # Convert `value` to numeric (float) after cleaning
     df['value'] = pd.to_numeric(df['value'], errors='coerce')
-
+    
     # Drop rows where `value` became `NaN` after removing non-numeric characters
     df.dropna(subset=['value'], inplace=True)
     print("After cleaning value column:", df.shape)
