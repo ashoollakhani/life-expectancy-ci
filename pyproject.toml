@@ -7,7 +7,7 @@ description = "First assignment of the Foundations Learning Path"
 authors = [
     {name = "Ashool Lakhani", email = "ashoollakhanii@gmail.com"}
 ]
-dependencies = ["pandas"]
+dependencies = ["pandas", "setuptools"]
 
 [build-system]
 requires = ["setuptools>=61.0"]
