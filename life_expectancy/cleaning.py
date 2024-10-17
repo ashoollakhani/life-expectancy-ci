@@ -45,9 +45,11 @@ def clean_data(country_code="PT"):
 if __name__ == "__main__":  # pragma: no cover
     parser = argparse.ArgumentParser(
         description="Clean life expectancy data for a specific country"
-        )
+    )
     parser.add_argument(
         '--country', default='PT', help='Country code to filter by (default: PT)'
-        )
+    )
     args = parser.parse_args()
     clean_data(args.country)
+
+# Ensure there is a final newline below this line
