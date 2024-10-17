@@ -28,7 +28,7 @@ def clean_data(country_code="PT"):
     df['value'] = pd.to_numeric(df['value'], errors='coerce')
     
     # Drop rows where `value` became `NaN` after removing non-numeric characters
-    df.dropna(subset=['value'], inplace=True)   
+    df.dropna(subset=['value'], inplace=True)
     print("After cleaning value column:", df.shape)
 
     # Filter for the specified region
@@ -43,7 +43,13 @@ def clean_data(country_code="PT"):
     df.to_csv('life_expectancy/data/pt_life_expectancy.csv', index=False)
 
 if __name__ == "__main__":  # pragma: no cover
-    parser = argparse.ArgumentParser(description="Clean life expectancy data for a specific country")
-    parser.add_argument('--country', default='PT', help='Country code to filter by (default: PT)')
+    parser = argparse.ArgumentParser(
+        description="Clean life expectancy data for a specific country"
+    )
+    parser.add_argument(
+        '--country', default='PT', help='Country code to filter by (default: PT)'
+    )
     args = parser.parse_args()
     clean_data(args.country)
+
+# Ensure there is a final newline below this line
