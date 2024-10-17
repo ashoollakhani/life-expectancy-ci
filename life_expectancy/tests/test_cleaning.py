@@ -1,3 +1,4 @@
+# pylint: disable=trailing-whitespace, missing-function-docstring, wrong-import-order
 """Tests for the cleaning module"""
 import pandas as pd
 
