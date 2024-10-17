@@ -6,7 +6,9 @@ from life_expectancy.cleaning import clean_data
 from . import OUTPUT_DIR
 
 def test_clean_data(pt_life_expectancy_expected):
-    """Run the `clean_data` function for Portugal (PT) and compare the output to the expected output"""
+    """
+    Run the `clean_data` function for Portugal (PT) and compare the output to the expected output
+    """
     # Pass "PT" as the argument to clean_data
     clean_data("PT")
     
