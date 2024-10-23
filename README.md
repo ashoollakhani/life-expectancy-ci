@@ -1,1 +1,2 @@
 # life-expectancy-ci
+[![CI Pipeline](https://github.com/ashoollakhani/life-expectancy-ci/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/ashoollakhani/life-expectancy-ci/actions/workflows/ci.yml)
